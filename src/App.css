@@ -40,3 +40,45 @@
 .read-the-docs {
   color: #888;
 }
+
+
+/* ******************* */
+.backgroundOrange:hover {
+  background-color: orange;
+}
+
+.month {
+  background-color: orange;
+  font-size: 2rem;
+}
+
+.grid-7 {
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+}
+
+.grid-7 > div {
+  height: 50px;
+  width: 50px;
+  align-content: center;
+}
+
+.days > div {
+  margin: 3px;
+  border: solid 1px grey;
+}
+
+.selected {
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+.form {
+  background-color: orange;
+  display: block;
+  margin: 2em;
+}
