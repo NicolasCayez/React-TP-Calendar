@@ -112,7 +112,8 @@ function Liste({liste}) {
   let listeRetour = [];
   liste.map((unEvenement, index)=>{
     if(unEvenement.confirmed == true){
-      listeRetour.push(unEvenement)
+      console.log (unEvenement, index)
+      listeRetour[index] = unEvenement
     }
   })
   if (listeRetour.length == 0) {
@@ -124,7 +125,7 @@ function Liste({liste}) {
   }else {
     return (
       <>
-        {listeRetour.map((evenement, index)=><p>{evenement.nom} - {evenement.lieu} - {evenement.heure}</p>)}
+        {listeRetour.map((evenement, index)=><p>{evenement.nom} - {evenement.lieu} - Jour du mois : {index + 1} - {evenement.heure}</p>)}
       </>
     )
   }
